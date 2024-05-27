@@ -1,0 +1,63 @@
+.tree-node {
+  position: relative;
+  margin-left: 20px;
+}
+
+.tree-node::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -0px;
+  bottom: 0;
+  width: 2px;
+  background-color: #ddd;
+}
+
+.tree-node:last-child::before {
+  height: 15px;
+}
+
+.node-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 0;
+  position: relative;
+}
+
+.node-label::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #ddd;
+  transform: translateY(-50%);
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.children {
+  margin-left: 20px;
+  border-left: 2px dashed #ddd;
+  padding-left: 10px;
+}
+
+/* TreeView.css */
+.tree-view {
+  padding-left: 20px;
+  border-left: 2px dashed #ddd;
+}
+
+/* App.css */
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
